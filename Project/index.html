@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prima mea pagina</title>
+        <link href= "style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div>
+          User:<input type="text" id="user">
+          Password:<input type="password" id="pass">
+          <button onclick="login();">Autentificare</button>
+      </div>
+
+        <script type="text/javascript">          
+               function login(){
+                   var user;
+                   var pass;
+                   user=document.getElementById('user').value;
+                   pass=document.getElementById('pass').value;
+                   if(user =="admin" && pass=="12345"){
+                       alert("Te-ai autentificat cu succes");
+                   }
+                   else{
+                       alert("User sau parola gresita");
+                   }
+               }           
+        </script>
+    </body>
+</html>
